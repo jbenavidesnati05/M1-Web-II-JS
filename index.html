@@ -26,35 +26,37 @@
                       <br>
                       <br>
                       <label for="">Nombre vendedor</label>
-                      <input type="text" />
+                      <input type="text" placeholder="Digitar letras y espacios"/>
                       <br />
                       <br />
                       <label for="">Valor de la venta</label>
-                      <input type="number" />
+                      <input id="vr_venta" type="number"  placeholder="1.000.000-50.000.000" />
                       <br />
                       <br />
                       <label for="">Salario vendedor</label>
-                      <input type="number" />
+                      <input id="salario" type="number" />
                       <br />
                       <br />
                       <label for="">Zona de venta</label>
-                      <select name="#" id="">
-                          <option value="">Norte</option>
-                          <option value="">Sur</option>
-                          <option value="">Oriente</option>
+                      <select name="#" id="zona">
+                          <option value=""></option>
+                          <option value="Norte">Norte</option>
+                          <option value="Sur">Sur</option>
+                          <option value="Oriente">Oriente</option>
                       </select>
                       <br />
                       <br />
-                      <label for="">Valor a pagar</label>
-                      <input type="text" disabled />
+                      <label for="">Comisión</label>
+                      <input type="text" id="comision" disabled />
                       <br />
                       <br />
                       <label for="">Total apagar</label>
-                      <input type="text" disabled />
+                      <input id="total_pagar" type="text" disabled />
                       <br>
                       <br>
-                      <button class="btn btn-primary" type="button">CALCULAR COMISIÓN</button>
-                </fieldset>
+                      <button class="btn btn-primary" type="button" onclick="vr_comision()">CALCULAR</button>
+
+                    </fieldset>
  
             </form>
         </section>
